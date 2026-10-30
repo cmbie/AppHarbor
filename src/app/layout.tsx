@@ -4,6 +4,20 @@ import { DM_Sans } from 'next/font/google';
 import "@/styles/tailwind.css";
 import { ThemeProvider } from '@/components/ThemeProvider';
 
+import { BotIdClient } from "botid/client";
+import { ReactNode } from "react";
+
+const protectedRoutes = [
+    {
+        path: "/api/checkout",
+        method: "POST",
+    },
+];
+
+type RootLayoutProps = {
+    children: ReactNode;
+}
+
 const dmSans = DM_Sans({
     subsets: ['latin'],
     weight: ['400', '500', '600', '700'],
