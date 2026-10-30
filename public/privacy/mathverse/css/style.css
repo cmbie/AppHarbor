@@ -1,0 +1,20 @@
+:root {
+    --legal-bg: #0b0f19;
+    --legal-card-bg: #131b2e;
+    --legal-card-border: #1e293b;
+    --legal-accent: #7c3aed;
+    --legal-accent-glow: rgba(124, 58, 237, 0.25);
+    --legal-text: #e2e8f0;
+    --legal-text-muted: #94a3b8;
+    --legal-heading: #f8fafc;
+}
+
+
+body {
+    background-color: var(--legal-bg);
+    color: var(--legal-text);
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
